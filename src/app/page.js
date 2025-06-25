@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import './globals.css';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -11,9 +12,9 @@ export default function Home() {
 
         <nav className="navbar">
           <a href="#home" style={{ '--i': 1 }} className="active">Home</a>
-          <a href="#about" style={{ '--i': 2 }}>About</a>
-          <a href="#skills" style={{ '--i': 3 }}>Skills</a>
-          <a href="#projects" style={{ '--i': 4 }}>Portfolio</a>
+          <Link href="/about" style={{ '--i': 2 }}>About</Link>
+          <Link href="/skills" style={{ '--i': 3 }}>Skills</Link>
+          <Link href="/projects" style={{ '--i': 4 }}>Portfolio</Link>
           <a href="#contact" style={{ '--i': 5 }}>Contact</a>
         </nav>
       </header>
@@ -35,7 +36,7 @@ export default function Home() {
             <a href="#" style={{ '--i': 9 }}><i className='bx bxl-github'></i></a>
             <a href="#" style={{ '--i': 10 }}><i className='bx bxl-instagram'></i></a>
           </div>
-          <a href="#" className="btn-box">More About Me</a>
+          <Link href="/about" className="btn-box">More About Me</Link>
         </div>
         <span className="home-imgHover"></span>
       </section>
