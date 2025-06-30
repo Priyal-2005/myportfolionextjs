@@ -33,7 +33,7 @@ export default function Home() {
             <a href="mailto:priyal.sarda2005@gmail.com" style={{ '--i': 8 }} aria-label="Gmail">
               <i className='bx bxl-gmail'></i>
             </a>
-            <a href="#" style={{ '--i': 9 }} aria-label="GitHub">
+            <a href="https://github.com/Priyal-2005" style={{ '--i': 9 }} aria-label="GitHub">
               <i className='bx bxl-github'></i>
             </a>
             <a href="#" style={{ '--i': 10 }} aria-label="Instagram">
