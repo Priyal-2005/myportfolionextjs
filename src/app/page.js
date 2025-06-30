@@ -23,23 +23,70 @@ export default function Home() {
         <div className="home-content">
           <h3>Hello, it's Me</h3>
           <h1>Priyal Sarda</h1>
-          <h3>And I'm a <span className="text"></span></h3>
-          <p>Co-founder of Coding Champs and Founder of PhotoDost.<br />
-            Student entrepreneur passionate about AI, and turning real-world problems into impactful solutions.
-          </p>
-          <div className="profile-container">
-            <img src="/images/profile.jpg" alt="My Photo" className="profile-pic" />
-          </div>
+          <h3>And I'm a <span className="text">Student Entrepreneur</span></h3>
+          <p>Co-founder of Coding Champs and Founder of PhotoDost. Student entrepreneur passionate about AI, and turning real-world problems into impactful solutions. I specialize in Python, JavaScript, React, and have a strong foundation in data structures and algorithms.</p>
+          
           <div className="home-sci">
-            <a href="#" style={{ '--i': 7 }}><i className='bx bxl-linkedin'></i></a>
-            <a href="#" style={{ '--i': 8 }}><i className='bx bxl-gmail'></i></a>
-            <a href="#" style={{ '--i': 9 }}><i className='bx bxl-github'></i></a>
-            <a href="#" style={{ '--i': 10 }}><i className='bx bxl-instagram'></i></a>
+            <a href="#" style={{ '--i': 7 }} aria-label="LinkedIn">
+              <i className='bx bxl-linkedin'></i>
+            </a>
+            <a href="#" style={{ '--i': 8 }} aria-label="Gmail">
+              <i className='bx bxl-gmail'></i>
+            </a>
+            <a href="#" style={{ '--i': 9 }} aria-label="GitHub">
+              <i className='bx bxl-github'></i>
+            </a>
+            <a href="#" style={{ '--i': 10 }} aria-label="Instagram">
+              <i className='bx bxl-instagram'></i>
+            </a>
           </div>
+          
           <Link href="/about" className="btn-box">More About Me</Link>
         </div>
-        <span className="home-imgHover"></span>
+
+        <div className="profile-container">
+          <img src="/images/profile.jpg" alt="Priyal Sarda" className="profile-pic" />
+        </div>
       </section>
+
+      <section className="contact" id="contact">
+        <div className="contact-text">
+          <h2>Contact <span>Me</span></h2>
+          <h4>Let's Work Together</h4>
+          <p>I'm always interested in new opportunities and collaborations. Whether you have a project in mind, want to discuss business ideas, or just want to connect, feel free to reach out!</p>
+          
+          <div className="contact-list">
+            <li><i className='bx bxs-send'></i> priyalsarda@example.com</li>
+            <li><i className='bx bxs-phone'></i> +91 12345 67890</li>
+            <li><i className='bx bxs-location-plus'></i> Mumbai, India</li>
+          </div>
+          
+          <div className="contact-icons">
+            <i className='bx bxl-linkedin' style={{ '--i': 7 }}></i>
+            <i className='bx bxl-gmail' style={{ '--i': 8 }}></i>
+            <i className='bx bxl-github' style={{ '--i': 9 }}></i>
+            <i className='bx bxl-instagram' style={{ '--i': 10 }}></i>
+          </div>
+        </div>
+
+        <div className="contact-form">
+          <form action="">
+            <input type="text" placeholder="Enter Your Name" required />
+            <input type="email" placeholder="Enter Your Email" required />
+            <input type="text" placeholder="Enter Your Subject" required />
+            <textarea placeholder="Enter Your Message" required></textarea>
+            <input type="submit" value="Submit" className="send" />
+          </form>
+        </div>
+      </section>
+
+      <div className="last-text">
+        <p>Developed by Priyal Sarda © 2024</p>
+      </div>
+
+      <a href="#home" className="top">
+        <i className='bx bx-up-arrow-alt'></i>
+      </a>
     </>
   );
 }
