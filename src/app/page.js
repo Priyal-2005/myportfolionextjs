@@ -36,7 +36,13 @@ export default function Home() {
 >
   <i className='bx bxl-linkedin'></i>
 </a>
-            <a href="mailto:priyal.sarda2005@gmail.com" style={{ '--i': 8 }} aria-label="Gmail">
+            <a
+  href="mailto:priyal.sarda2005@gmail.com"
+  style={{ '--i': 8 }}
+  aria-label="Gmail"
+>
+  <i className='bx bxl-gmail'></i>
+</a>
               <i className='bx bxl-gmail'></i>
             </a>
             <a href="https://github.com/Priyal-2005" style={{ '--i': 9 }} aria-label="GitHub">
