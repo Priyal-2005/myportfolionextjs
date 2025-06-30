@@ -116,7 +116,14 @@ export default function Skills() {
             ].map((skill, index) => (
               <div className="radial-bar" key={index}>
                 <svg viewBox="0 0 200 200">
-                  <circle className="progress-bar" cx="100" cy="100" r="80"></circle>
+                  <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stopColor="#0ef" />
+                      <stop offset="50%" stopColor="#00c6ff" />
+                      <stop offset="100%" stopColor="#a855f7" />
+                    </linearGradient>
+                  </defs>
+                  <circle className="progress-bar" cx="100" cy="100" r="80" stroke="rgba(255,255,255,0.1)" strokeWidth="8" fill="transparent"></circle>
                   <circle className={`path ${skill.pathClass}`} cx="100" cy="100" r="80"></circle>
                 </svg>
                 <div className="percentage">{skill.percent}</div>
