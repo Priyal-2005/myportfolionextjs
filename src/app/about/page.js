@@ -42,10 +42,6 @@ export default function About() {
       <div className="last-text">
         <p>Developed by Priyal Sarda © 2024</p>
       </div>
-
-      <a href="#home" className="top">
-        <i className='bx bx-up-arrow-alt'></i>
-      </a>
     </>
   );
 }

@@ -362,6 +362,13 @@ section {
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.technical-bars .bar .info .skill-name {
+    display: flex;
+    align-items: center;
     gap: 1rem;
 }
 
@@ -372,6 +379,14 @@ section {
 .technical-bars .bar .info span {
     font-size: 18px;
     font-weight: 600;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+.technical-bars .bar .info .percentage-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0ef;
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
 }
@@ -401,56 +416,24 @@ section {
 .progress-line.html span { width: 90%; }
 .progress-line.css span { width: 60%; }
 .progress-line.js span { width: 85%; }
-.progress-line.react span { width: 50%; }
+.progress-line.sql span { width: 80%; }
+.progress-line.nextjs span { width: 80%; }
+.progress-line.react span { width: 80%; }
 .progress-line.python span { width: 80%; }
-
-.progress-line span::after {
-    position: absolute;
-    padding: 4px 12px;
-    background: linear-gradient(45deg, #0ef, #00c6ff);
-    color: #081b29;
-    font-size: 12px;
-    font-weight: 600;
-    border-radius: 6px;
-    top: -40px;
-    right: -20px;
-    animation: showText 0.5s 1.5s linear forwards;
-    opacity: 0;
-}
-
-.progress-line.html span::after { content: "90%"; }
-.progress-line.css span::after { content: "60%"; }
-.progress-line.js span::after { content: "85%"; }
-.progress-line.react span::after { content: "50%"; }
-.progress-line.python span::after { content: "80%"; }
-
-.progress-line span::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border: 7px solid transparent;
-    border-bottom-width: 0px;
-    border-right-width: 0px;
-    border-top-color: #0ef;
-    top: -10px;
-    right: 0;
-    animation: showText 0.5s 1.5s linear forwards;
-    opacity: 0;
-}
 
 /* Radial Bars */
 .radial-bars {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 3rem;
     justify-items: center;
+    padding: 2rem 0;
 }
 
 .radial-bars .radial-bar {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -463,8 +446,8 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-90deg);
-    width: 140px;
-    height: 140px;
+    width: 160px;
+    height: 160px;
 }
 
 .path {
@@ -483,16 +466,16 @@ section {
 .path-4 { animation: animate-path4 1s 1s linear forwards; }
 
 @keyframes animate-path1 { 100% { stroke-dashoffset: 50; } }
-@keyframes animate-path2 { 100% { stroke-dashoffset: 175; } }
+@keyframes animate-path2 { 100% { stroke-dashoffset: 75; } }
 @keyframes animate-path3 { 100% { stroke-dashoffset: 125; } }
-@keyframes animate-path4 { 100% { stroke-dashoffset: 75; } }
+@keyframes animate-path4 { 100% { stroke-dashoffset: 100; } }
 
 .radial-bar .percentage {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 700;
     color: #0ef;
     animation: showText 0.5s 1s linear forwards;
@@ -501,7 +484,7 @@ section {
 
 .radial-bar .text {
     position: absolute;
-    bottom: 20px;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 16px;
@@ -510,6 +493,7 @@ section {
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
     color: #fff;
+    white-space: nowrap;
 }
 
 /* Projects Section */
@@ -859,6 +843,21 @@ section {
     .back-arrow span {
         display: none;
     }
+
+    .radial-bars {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 2rem;
+    }
+
+    .radial-bars .radial-bar {
+        width: 180px;
+        height: 180px;
+    }
+
+    .radial-bars .radial-bar svg {
+        width: 140px;
+        height: 140px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1030,5 +1029,29 @@ section {
         left: auto;
         margin: 20px auto;
         display: inline-flex;
+    }
+
+    .radial-bars {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .radial-bars .radial-bar {
+        width: 140px;
+        height: 140px;
+    }
+
+    .radial-bars .radial-bar svg {
+        width: 110px;
+        height: 110px;
+    }
+
+    .radial-bar .percentage {
+        font-size: 20px;
+    }
+
+    .radial-bar .text {
+        font-size: 14px;
+        bottom: 20px;
     }
 }

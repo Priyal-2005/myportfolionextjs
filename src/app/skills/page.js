@@ -52,6 +52,22 @@ export default function Skills() {
 
             <div className="bar">
               <div className="info">
+                <i style={{ color: "#0078d4" }} className='bx bx-data'></i>
+                <span>SQL</span>
+              </div>
+              <div className="progress-line sql"><span></span></div>
+            </div>
+
+            <div className="bar">
+              <div className="info">
+                <i style={{ color: "#000000" }} className='bx bx-code-block'></i>
+                <span>Next.js</span>
+              </div>
+              <div className="progress-line nextjs"><span></span></div>
+            </div>
+
+            <div className="bar">
+              <div className="info">
                 <i style={{ color: "#c32ec9" }} className='bx bxl-react'></i>
                 <span>React</span>
               </div>
@@ -72,8 +88,8 @@ export default function Skills() {
           <h1 className="heading1">Professional Skills</h1>
           <div className="radial-bars">
             {[
-              { percent: "85%", label: "Leadership", pathClass: "path-1" },
-              { percent: "90%", label: "Communication", pathClass: "path-2" },
+              { percent: "90%", label: "Leadership", pathClass: "path-1" },
+              { percent: "85%", label: "Communication", pathClass: "path-2" },
               { percent: "75%", label: "Problem Solving", pathClass: "path-3" },
               { percent: "80%", label: "Teamwork", pathClass: "path-4" },
             ].map((skill, index) => (
