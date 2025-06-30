@@ -36,9 +36,15 @@ export default function Home() {
             <a href="https://github.com/Priyal-2005" style={{ '--i': 9 }} aria-label="GitHub">
               <i className='bx bxl-github'></i>
             </a>
-            <a href="#" style={{ '--i': 10 }} aria-label="Instagram">
-              <i className='bx bxl-instagram'></i>
-            </a>
+            <a href="https://www.instagram.com/itspriyalsarda/?__pwa=1"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ '--i': 10 }}
+  aria-label="Instagram"
+>
+  <i className='bx bxl-instagram'></i>
+</a>
+
           </div>
           
           <Link href="/about" className="btn-box">More About Me</Link>
