@@ -13,7 +13,7 @@ export default function Home() {
           <a href="#home" style={{ '--i': 1 }} className="active">Home</a>
           <Link href="/about" style={{ '--i': 2 }}>About</Link>
           <Link href="/skills" style={{ '--i': 3 }}>Skills</Link>
-          <Link href="/projects" style={{ '--i': 4 }}>Portfolio</Link>
+          <Link href="/projects" style={{ '--i': 4 }}>Projects</Link>
           <a href="#contact" style={{ '--i': 5 }}>Contact</a>
         </nav>
       </header>
