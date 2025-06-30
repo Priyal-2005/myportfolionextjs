@@ -70,9 +70,9 @@ export default function Home() {
           <p>I'm always interested in new opportunities and collaborations. Whether you have a project in mind, want to discuss business ideas, or just want to connect, feel free to reach out!</p>
           
           <div className="contact-list">
-            <li><i className='bx bxs-send'></i> priyalsarda@example.com</li>
-            <li><i className='bx bxs-phone'></i> +91 12345 67890</li>
-            <li><i className='bx bxs-location-plus'></i> Mumbai, India</li>
+            <li><i className='bx bxs-send'></i> priyal.sarda2005@gmail.com</li>
+            <li><i className='bx bxs-phone'></i> +91 93911 54230</li>
+            <li><i className='bx bxs-location-plus'></i> Delhi, India</li>
           </div>
           
           <div className="contact-icons">
