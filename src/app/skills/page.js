@@ -1,8 +1,25 @@
-'use client';
+import Link from 'next/link';
 
 export default function Skills() {
   return (
     <>
+      <header className="header">
+        <Link href="/" className="logo">Portfolio.</Link>
+
+        <nav className="navbar">
+          <Link href="/" style={{ '--i': 1 }}>Home</Link>
+          <Link href="/about" style={{ '--i': 2 }}>About</Link>
+          <Link href="/skills" style={{ '--i': 3 }} className="active">Skills</Link>
+          <Link href="/" style={{ '--i': 4 }}>Portfolio</Link>
+          <Link href="/#contact" style={{ '--i': 5 }}>Contact</Link>
+        </nav>
+      </header>
+
+      <Link href="/" className="back-arrow">
+        <i className='bx bx-arrow-back'></i>
+        <span>Back to Home</span>
+      </Link>
+
       <h1 className="sub-title">My <span>Skills</span></h1>
       
       <section>

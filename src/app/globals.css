@@ -86,6 +86,38 @@ body {
     width: 80%;
 }
 
+/* Back Arrow */
+.back-arrow {
+    position: fixed;
+    top: 100px;
+    left: 2rem;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 12px 20px;
+    background: rgba(14, 239, 255, 0.1);
+    border: 2px solid #0ef;
+    border-radius: 50px;
+    color: #0ef;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.back-arrow:hover {
+    background: #0ef;
+    color: #081b29;
+    transform: translateX(-5px);
+    box-shadow: 0 0 20px rgba(14, 239, 255, 0.5);
+}
+
+.back-arrow i {
+    font-size: 20px;
+}
+
 /* Home Section */
 .home {
     position: relative;
@@ -233,6 +265,7 @@ section {
     text-align: center;
     margin-bottom: 4rem;
     font-weight: 700;
+    margin-top: 120px;
 }
 
 .sub-title span {
@@ -484,6 +517,7 @@ section {
     padding: 80px 10%;
     max-width: 1400px;
     margin: 0 auto;
+    margin-top: 120px;
 }
 
 .main-text {
@@ -610,7 +644,7 @@ section {
     margin: 2rem 0;
 }
 
-.contact-icons i {
+.contact-icons a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -621,13 +655,14 @@ section {
     border-radius: 50%;
     color: #0ef;
     font-size: 20px;
+    text-decoration: none;
     transition: all 0.3s ease;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: calc(0.2s * var(--i));
 }
 
-.contact-icons i:hover {
+.contact-icons a:hover {
     background-color: #0ef;
     color: #081b29;
     box-shadow: 0 0 20px rgba(14, 239, 255, 0.5);
@@ -814,6 +849,16 @@ section {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
+
+    .back-arrow {
+        left: 1rem;
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+
+    .back-arrow span {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -922,6 +967,13 @@ section {
     section {
         padding: 60px 5%;
     }
+
+    .back-arrow {
+        top: 80px;
+        left: 1rem;
+        padding: 8px 12px;
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -970,5 +1022,13 @@ section {
     .navbar a {
         font-size: 14px;
         padding: 4px 8px;
+    }
+
+    .back-arrow {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: 20px auto;
+        display: inline-flex;
     }
 }

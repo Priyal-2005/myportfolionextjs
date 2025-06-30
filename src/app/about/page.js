@@ -1,6 +1,25 @@
+import Link from 'next/link';
+
 export default function About() {
   return (
     <>
+      <header className="header">
+        <Link href="/" className="logo">Portfolio.</Link>
+
+        <nav className="navbar">
+          <Link href="/" style={{ '--i': 1 }}>Home</Link>
+          <Link href="/about" style={{ '--i': 2 }} className="active">About</Link>
+          <Link href="/skills" style={{ '--i': 3 }}>Skills</Link>
+          <Link href="/" style={{ '--i': 4 }}>Portfolio</Link>
+          <Link href="/#contact" style={{ '--i': 5 }}>Contact</Link>
+        </nav>
+      </header>
+
+      <Link href="/" className="back-arrow">
+        <i className='bx bx-arrow-back'></i>
+        <span>Back to Home</span>
+      </Link>
+
       <section className="about" id="about">
         <div className="about-img">
           <img src="/images/img.jpeg" alt="About Priyal Sarda" />
