@@ -27,7 +27,7 @@ export default function Home() {
           <p>Co-founder of Coding Champs and Founder of PhotoDost. Student entrepreneur passionate about AI, and turning real-world problems into impactful solutions. I specialize in Python, JavaScript, React, and have a strong foundation in data structures and algorithms.</p>
           
           <div className="home-sci">
-            <a href="#" style={{ '--i': 7 }} aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/priyal-sarda-a38793323/" style={{ '--i': 7 }} aria-label="LinkedIn">
               <i className='bx bxl-linkedin'></i>
             </a>
             <a href="mailto:priyal.sarda2005@gmail.com" style={{ '--i': 8 }} aria-label="Gmail">
