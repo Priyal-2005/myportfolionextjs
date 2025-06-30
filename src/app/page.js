@@ -28,35 +28,32 @@ export default function Home() {
           
           <div className="home-sci">
             <a
-  href="https://www.linkedin.com/in/priyal-sarda-a38793323/"
-  target="_blank"
-  rel="noopener noreferrer"
-  style={{ '--i': 7 }}
-  aria-label="LinkedIn"
->
-  <i className='bx bxl-linkedin'></i>
-</a>
+              href="https://www.linkedin.com/in/priyal-sarda-a38793323/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ '--i': 7 }}
+              aria-label="LinkedIn"
+            >
+              <i className='bx bxl-linkedin'></i>
+            </a>
             <a
-  href="mailto:priyal.sarda2005@gmail.com"
-  style={{ '--i': 8 }}
-  aria-label="Gmail"
->
-  <i className='bx bxl-gmail'></i>
-</a>
+              href="mailto:priyal.sarda2005@gmail.com"
+              style={{ '--i': 8 }}
+              aria-label="Gmail"
+            >
               <i className='bx bxl-gmail'></i>
             </a>
             <a href="https://github.com/Priyal-2005" style={{ '--i': 9 }} aria-label="GitHub">
               <i className='bx bxl-github'></i>
             </a>
             <a href="https://www.instagram.com/itspriyalsarda/?__pwa=1"
-  target="_blank"
-  rel="noopener noreferrer"
-  style={{ '--i': 10 }}
-  aria-label="Instagram"
->
-  <i className='bx bxl-instagram'></i>
-</a>
-
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ '--i': 10 }}
+              aria-label="Instagram"
+            >
+              <i className='bx bxl-instagram'></i>
+            </a>
           </div>
           
           <Link href="/about" className="btn-box">More About Me</Link>
