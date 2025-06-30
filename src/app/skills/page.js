@@ -28,56 +28,77 @@ export default function Skills() {
           <div className="technical-bars">
             <div className="bar">
               <div className="info">
-                <i style={{ color: "#c95d2e" }} className='bx bxl-html5'></i>
-                <span>HTML</span>
+                <div className="skill-name">
+                  <i style={{ color: "#c95d2e" }} className='bx bxl-html5'></i>
+                  <span>HTML</span>
+                </div>
+                <span className="percentage-text">90%</span>
               </div>
               <div className="progress-line html"><span></span></div>
             </div>
 
             <div className="bar">
               <div className="info">
-                <i style={{ color: "#147bbc" }} className='bx bxl-css3'></i>
-                <span>CSS</span>
+                <div className="skill-name">
+                  <i style={{ color: "#147bbc" }} className='bx bxl-css3'></i>
+                  <span>CSS</span>
+                </div>
+                <span className="percentage-text">60%</span>
               </div>
               <div className="progress-line css"><span></span></div>
             </div>
 
             <div className="bar">
               <div className="info">
-                <i style={{ color: "#b0bc1e" }} className='bx bxl-javascript'></i>
-                <span>JavaScript</span>
+                <div className="skill-name">
+                  <i style={{ color: "#b0bc1e" }} className='bx bxl-javascript'></i>
+                  <span>JavaScript</span>
+                </div>
+                <span className="percentage-text">85%</span>
               </div>
               <div className="progress-line js"><span></span></div>
             </div>
 
             <div className="bar">
               <div className="info">
-                <i style={{ color: "#0078d4" }} className='bx bx-data'></i>
-                <span>SQL</span>
+                <div className="skill-name">
+                  <i style={{ color: "#0078d4" }} className='bx bx-data'></i>
+                  <span>SQL</span>
+                </div>
+                <span className="percentage-text">80%</span>
               </div>
               <div className="progress-line sql"><span></span></div>
             </div>
 
             <div className="bar">
               <div className="info">
-                <i style={{ color: "#000000" }} className='bx bx-code-block'></i>
-                <span>Next.js</span>
+                <div className="skill-name">
+                  <i style={{ color: "#000000" }} className='bx bx-code-block'></i>
+                  <span>Next.js</span>
+                </div>
+                <span className="percentage-text">80%</span>
               </div>
               <div className="progress-line nextjs"><span></span></div>
             </div>
 
             <div className="bar">
               <div className="info">
-                <i style={{ color: "#c32ec9" }} className='bx bxl-react'></i>
-                <span>React</span>
+                <div className="skill-name">
+                  <i style={{ color: "#c32ec9" }} className='bx bxl-react'></i>
+                  <span>React</span>
+                </div>
+                <span className="percentage-text">80%</span>
               </div>
               <div className="progress-line react"><span></span></div>
             </div>
 
             <div className="bar">
               <div className="info">
-                <i style={{ color: "#69bcbc" }} className='bx bxl-python'></i>
-                <span>Python</span>
+                <div className="skill-name">
+                  <i style={{ color: "#69bcbc" }} className='bx bxl-python'></i>
+                  <span>Python</span>
+                </div>
+                <span className="percentage-text">80%</span>
               </div>
               <div className="progress-line python"><span></span></div>
             </div>
