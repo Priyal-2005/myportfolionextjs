@@ -10,7 +10,7 @@ export default function Skills() {
           <Link href="/" style={{ '--i': 1 }}>Home</Link>
           <Link href="/about" style={{ '--i': 2 }}>About</Link>
           <Link href="/skills" style={{ '--i': 3 }} className="active">Skills</Link>
-          <Link href="/" style={{ '--i': 4 }}>Portfolio</Link>
+          <Link href="/projects" style={{ '--i': 4 }}>Portfolio</Link>
           <Link href="/#contact" style={{ '--i': 5 }}>Contact</Link>
         </nav>
       </header>
