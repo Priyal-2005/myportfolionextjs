@@ -104,14 +104,12 @@ export default function About() {
                 {step.description && (
                   <p className="timeline-description">{step.description}</p>
                 )}
-                {/* Uncomment and add href when certificate links are available
                 {step.certificateLink && (
                   <a href={step.certificateLink} className="timeline-certificate" target="_blank" rel="noopener noreferrer">
                     <i className='bx bx-certificate'></i>
                     View Certificate
                   </a>
                 )}
-                */}
               </div>
             </div>
           ))}
