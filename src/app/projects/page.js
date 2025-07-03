@@ -27,6 +27,17 @@ export default function Projects() {
       description: "Simple and clean calendar with navigation and real-time date info. Features event management, reminders, and seamless month-to-month navigation.",
       image: "/images/Calendar.jpg",
     },
+    {
+      title: "Notes App",
+      description: "A smart notes application built with React that allows users to create, edit, delete, and pin notes. Supports autosave and responsive layout for mobile users.",
+      image: "/images/notes-app.jpg",
+    },
+    {
+      title: "Loan Calculator App",
+      description: "A modern loan calculator that computes EMI, total payment, and interest breakdown. Built using Next.js with real-time input handling and styled with plain CSS. Supports dynamic input and responsive charts.",
+      image: "/images/loan-calculator.jpg",
+      status: "Work in Progress"
+    },
   ];
 
   return (
@@ -56,7 +67,14 @@ export default function Projects() {
         <div className="projects-grid">
           {projects.map((project, index) => (
             <div className="project-card" key={index}>
-              <img src={project.image} alt={project.title} />
+              <div className="project-image-container">
+                <img src={project.image} alt={project.title} />
+                {project.status && (
+                  <div className="project-status">
+                    <span>{project.status}</span>
+                  </div>
+                )}
+              </div>
               <div className="project-info">
                 <h5>{project.title}</h5>
                 <p>{project.description}</p>

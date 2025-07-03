@@ -1008,12 +1008,20 @@ section {
     transition: all 0.4s ease;
     backdrop-filter: blur(15px);
     box-shadow: 0 8px 32px rgba(14, 239, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .project-card:hover {
     transform: translateY(-15px) scale(1.02);
     box-shadow: 0 25px 50px rgba(14, 239, 255, 0.2);
     border-color: rgba(14, 239, 255, 0.4);
+}
+
+.project-image-container {
+    position: relative;
+    overflow: hidden;
 }
 
 .project-card img {
@@ -1029,8 +1037,37 @@ section {
     filter: brightness(1.1) contrast(1.2);
 }
 
+.project-status {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(14, 239, 255, 0.9);
+    color: #081b29;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(14, 239, 255, 0.3);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 4px 15px rgba(14, 239, 255, 0.3);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(14, 239, 255, 0.5);
+    }
+}
+
 .project-info {
     padding: 2.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-info h5 {
@@ -1048,6 +1085,7 @@ section {
     font-size: 16px;
     line-height: 1.7;
     color: #b8b8b8;
+    flex-grow: 1;
 }
 
 /* Contact Section */
