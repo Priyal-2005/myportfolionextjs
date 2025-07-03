@@ -12,7 +12,7 @@ export default function About() {
       date: "August 2020",
       title: "IIIT Hyderabad Online Pedagogy Program",
       description: "Youngest IIIT Certified Teacher",
-      // certificateLink: "" // Add certificate link here later
+      certificateLink: "https://drive.google.com/file/d/18bCx5JyAKdEuECxCjHw0P0DT11JyP8k0/view?usp=sharing"
     },
     {
       date: "August 2020",
