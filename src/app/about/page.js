@@ -18,7 +18,7 @@ export default function About() {
       date: "August 2020",
       title: "Metamorphosis IIT Bhubaneshwar Entrepreneurship Program",
       description: "",
-      // certificateLink: "" // Add certificate link here later
+      // certificateLink: "https://drive.google.com/file/d/17Dkd2poG3ZUKJHnr6MuuIoA9T4xsCuoN/view?usp=sharing"
     },
     {
       date: "March 2021",
