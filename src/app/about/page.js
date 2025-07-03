@@ -18,19 +18,19 @@ export default function About() {
       date: "August 2020",
       title: "Metamorphosis IIT Bhubaneshwar Entrepreneurship Program",
       description: "",
-      // certificateLink: "https://drive.google.com/file/d/17Dkd2poG3ZUKJHnr6MuuIoA9T4xsCuoN/view?usp=sharing"
+      certificateLink: "https://drive.google.com/file/d/17Dkd2poG3ZUKJHnr6MuuIoA9T4xsCuoN/view?usp=sharing"
     },
     {
       date: "March 2021",
       title: "Wadhwani Foundation Entrepreneurship Program",
       description: "",
-      // certificateLink: "" // Add certificate link here later
+      certificateLink: "https://drive.google.com/file/d/1gRKhINkr2JhvQ44vQXY7CbI3g6eHfoEQ/view?usp=sharing"
     },
     {
       date: "July 2022",
       title: "EduxLabs IIT Madras DL & Computer Vision using Python",
       description: "",
-      // certificateLink: "" // Add certificate link here later
+      certificateLink: "" // Add certificate link here later
     },
     {
       date: "July 2022 - August 2022",
