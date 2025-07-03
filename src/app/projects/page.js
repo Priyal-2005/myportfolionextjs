@@ -23,7 +23,7 @@ export default function Projects() {
       // Add your GitHub repository link here
       repo: "https://github.com/Priyal-2005/Calculator", // Replace with actual repo URL
       // Add your live demo link here
-      live: "https://your-calculator-demo.vercel.app", // Replace with actual demo URL
+      live: "https://priyal-2005.github.io/Calculator/", // Replace with actual demo URL
     },
     {
       title: "BMI Calculator",
