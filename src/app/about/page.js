@@ -42,7 +42,7 @@ export default function About() {
       date: "August 2022 - October 2022",
       title: "Applied AI – Hewlett Packard Enterprise Education",
       description: "Got LoR for winning best AI prototype",
-      // certificateLink: "" // Add certificate link here later
+      certificateLink: "https://drive.google.com/file/d/1Ia_47xYRQg2q1-NYcg16HbX9dxIqwlNd/view?usp=sharing"
     }
   ];
 
