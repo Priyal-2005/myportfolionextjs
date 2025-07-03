@@ -13,9 +13,7 @@ export default function Projects() {
       title: "Weather App",
       description: "Real-time weather updates with search, forecast, and smooth responsive UI. Features location-based weather data, 7-day forecasts, and beautiful weather animations.",
       image: "/images/Weather-app.jpg",
-      // Add your GitHub repository link here
-      repo: "https://github.com/Priyal-2005/Weather-App", // Replace with actual repo URL
-      // Add your live demo link here
+      repo: "https://github.com/Priyal-2005/Weather-App",
       live: "https://your-weather-app-demo.vercel.app", // Replace with actual demo URL
     },
     {
