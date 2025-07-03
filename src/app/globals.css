@@ -383,7 +383,7 @@ section {
     grid-template-columns: 1fr 1.2fr;
     align-items: center;
     gap: 4rem;
-    margin: 80px 0;
+    margin: 80px 0 20px 0; /* Reduced bottom margin from 80px to 20px */
 }
 
 .about-img {
@@ -452,10 +452,10 @@ section {
 
 /* Journey Timeline Section */
 .journey-section {
-    padding: 80px 10%;
+    padding: 40px 10%; /* Reduced top padding from 80px to 40px */
     max-width: 1400px;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 0; /* Removed top margin */
 }
 
 .journey-header {
@@ -1892,7 +1892,7 @@ section {
 
     /* Journey timeline mobile adjustments */
     .journey-section {
-        padding: 60px 5%;
+        padding: 30px 5%; /* Reduced from 60px to 30px */
     }
 
     .journey-header h2 {
