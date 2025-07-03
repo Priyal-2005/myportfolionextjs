@@ -7,14 +7,14 @@ export default function Projects() {
       description: "Gemini API-based chatbot with context awareness, file upload, and emoji support. Built with modern React and integrated with advanced AI capabilities for natural conversations.",
       image: "/images/AI-chatbot.jpg",
       repo: "https://github.com/Priyal-2005/AI-Chatbot",
-      live: "https://your-ai-chatbot-demo.vercel.app",
+      live: "https://priyal-2005.github.io/AI-Chatbot/",
     },
     {
       title: "Weather App",
       description: "Real-time weather updates with search, forecast, and smooth responsive UI. Features location-based weather data, 7-day forecasts, and beautiful weather animations.",
       image: "/images/Weather-app.jpg",
       repo: "https://github.com/Priyal-2005/Weather-App",
-      live: "https://your-weather-app-demo.vercel.app",
+      live: "https://priyal-2005.github.io/Weather-App/",
     },
     {
       title: "Calculator",
