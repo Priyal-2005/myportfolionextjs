@@ -44,7 +44,7 @@ export default function Projects() {
       description: "A smart notes application built with React that allows users to create, edit, delete, and pin notes. Supports autosave and responsive layout for mobile users.",
       image: "/images/notes-app.jpg",
       repo: "https://github.com/Priyal-2005/Notes-App",
-      live: "https://your-notes-app-demo.vercel.app",
+      live: "https://notes-6z9rs42yd-priyal-2005s-projects.vercel.app/",
     },
     {
       title: "Loan Calculator App",
