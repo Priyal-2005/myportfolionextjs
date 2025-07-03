@@ -6,10 +6,8 @@ export default function Projects() {
       title: "AI Chatbot",
       description: "Gemini API-based chatbot with context awareness, file upload, and emoji support. Built with modern React and integrated with advanced AI capabilities for natural conversations.",
       image: "/images/AI-chatbot.jpg",
-      // Add your GitHub repository link here
-      repo: "https://github.com/Priyal-2005/ai-chatbot", // Replace with actual repo URL
-      // Add your live demo link here
-      live: "https://your-ai-chatbot-demo.vercel.app", // Replace with actual demo URL
+      repo: "https://github.com/Priyal-2005/AI-Chatbot",
+      live: "https://your-ai-chatbot-demo.vercel.app",
     },
     {
       title: "Weather App",
