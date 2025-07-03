@@ -567,7 +567,7 @@ section {
 }
 
 .progress-line.html span { width: 90%; }
-.progress-line.css span { width: 90%; }
+.progress-line.css span { width: 70%; }
 .progress-line.js span { width: 85%; }
 .progress-line.sql span { width: 80%; }
 .progress-line.nextjs span { width: 80%; }

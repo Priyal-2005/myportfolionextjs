@@ -44,7 +44,7 @@ export default function Skills() {
                   <i style={{ color: "#147bbc" }} className='bx bxl-css3'></i>
                   <span>CSS</span>
                 </div>
-                <span className="percentage-text">90%</span>
+                <span className="percentage-text">70%</span>
               </div>
               <div className="progress-line css"><span></span></div>
             </div>
