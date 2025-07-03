@@ -6,7 +6,7 @@ export default function About() {
       date: "Oct 2019 - Jan 2020",
       title: "TiE TYE Entrepreneurship Program",
       description: "Won prototype competition",
-      // certificateLink: "" // Add certificate link here later
+      certificateLink: "https://drive.google.com/file/d/16RrjD6gf_N1ylPHRWldHEnGuHfjuQ4on/view?usp=sharing"
     },
     {
       date: "August 2020",
