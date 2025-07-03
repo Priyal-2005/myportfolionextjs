@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <header className="header">
-        <a href="#" className="logo">My Portfolio</a>
+        <a href="#" className="logo">Portfolio.</a>
 
         <nav className="navbar">
           <a href="#home" style={{ '--i': 1 }} className="active">Home</a>
