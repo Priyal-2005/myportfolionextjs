@@ -29,10 +29,8 @@ export default function Projects() {
       title: "BMI Calculator",
       description: "Interactive BMI checker with sliders and health status indicators. Provides personalized health recommendations and tracks BMI history over time.",
       image: "/images/bmi-calculator.jpg",
-      // Add your GitHub repository link here
-      repo: "https://github.com/Priyal-2005/bmi-calculator", // Replace with actual repo URL
-      // Add your live demo link here
-      live: "https://your-bmi-calculator-demo.vercel.app", // Replace with actual demo URL
+      repo: "https://github.com/Priyal-2005/BMI-Calculator",
+      live: "https://priyal-2005.github.io/BMI-Calculator/",
     },
     {
       title: "Calendar",
