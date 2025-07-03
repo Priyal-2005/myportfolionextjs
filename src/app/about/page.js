@@ -36,7 +36,7 @@ export default function About() {
       date: "July 2022 - August 2022",
       title: "Introduction to Artificial Intelligence – Nanyang Technological University",
       description: "",
-      // certificateLink: "" // Add certificate link here later
+      certificateLink: "https://drive.google.com/file/d/1QJ_fyFe5PADkdbxCeCoq9BNKyigEMOQp/view?usp=sharing"
     },
     {
       date: "August 2022 - October 2022",
