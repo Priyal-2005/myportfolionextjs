@@ -30,7 +30,7 @@ export default function About() {
       date: "July 2022",
       title: "EduxLabs IIT Madras DL & Computer Vision using Python",
       description: "",
-      certificateLink: "" // Add certificate link here later
+      certificateLink: "https://drive.google.com/file/d/1zPlE2MYzVNWSunKKASMm8BjTnDqiHuyx/view?usp=sharing"
     },
     {
       date: "July 2022 - August 2022",
