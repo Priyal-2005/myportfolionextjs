@@ -36,10 +36,8 @@ export default function Projects() {
       title: "Calendar",
       description: "Simple and clean calendar with navigation and real-time date info. Features event management, reminders, and seamless month-to-month navigation.",
       image: "/images/Calendar.jpg",
-      // Add your GitHub repository link here
-      repo: "https://github.com/Priyal-2005/Calendar", // Replace with actual repo URL
-      // Add your live demo link here
-      live: "https://priyal-2005.github.io/Calendar/", // Replace with actual demo URL
+      repo: "https://github.com/Priyal-2005/Calendar",
+      live: "https://priyal-2005.github.io/Calendar/",
     },
     {
       title: "Notes App",
