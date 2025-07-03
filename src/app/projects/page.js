@@ -51,7 +51,7 @@ export default function Projects() {
       description: "A modern loan calculator that computes EMI, total payment, and interest breakdown. Built using Next.js with real-time input handling and styled with plain CSS. Supports dynamic input and responsive charts.",
       image: "/images/loan-calculator.jpg",
       status: "Work in Progress",
-      repo: "https://github.com/Priyal-2005/loan-calculator",
+      repo: "https://github.com/Priyal-2005/Loan-Calculator-App",
       live: null, // Will be added when project is completed
     },
   ];
