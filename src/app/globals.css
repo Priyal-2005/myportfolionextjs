@@ -484,6 +484,128 @@ section {
     background-clip: text;
 }
 
+/* Technical Skills Grid */
+.technical-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skill-card-tech {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(14, 239, 255, 0.1);
+    border-radius: 20px;
+    padding: 2rem;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-card-tech::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(14, 239, 255, 0.05), transparent);
+    transition: all 0.6s ease;
+}
+
+.skill-card-tech:hover::before {
+    left: 100%;
+}
+
+.skill-card-tech:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: rgba(14, 239, 255, 0.3);
+    box-shadow: 0 15px 40px rgba(14, 239, 255, 0.15);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.skill-name {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.skill-name i {
+    font-size: 28px;
+    transition: all 0.3s ease;
+}
+
+.skill-card-tech:hover .skill-name i {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.skill-name span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(45deg, #fff, #0ef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.percentage-badge {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0ef;
+    background: rgba(14, 239, 255, 0.1);
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid rgba(14, 239, 255, 0.3);
+    backdrop-filter: blur(10px);
+    background: linear-gradient(45deg, #0ef, #00c6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.progress-line {
+    position: relative;
+    border-radius: 15px;
+    width: 100%;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    animation: animate 1s 1s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.progress-line span {
+    height: 100%;
+    background: linear-gradient(45deg, #0ef, #00c6ff, #a855f7);
+    position: absolute;
+    border-radius: 15px;
+    animation: animate 1s 1s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+    box-shadow: 0 0 15px rgba(14, 239, 255, 0.5);
+}
+
+.progress-line.html span { width: 90%; }
+.progress-line.css span { width: 70%; }
+.progress-line.js span { width: 85%; }
+.progress-line.sql span { width: 70%; }
+.progress-line.nextjs span { width: 80%; }
+.progress-line.react span { width: 80%; }
+.progress-line.python span { width: 80%; }
+.progress-line.prompt span { width: 75%; }
+
+/* Legacy Technical Bars (keeping for compatibility) */
 .technical-bars .bar {
     margin: 3rem 0;
     padding: 1.5rem 0;
@@ -565,15 +687,6 @@ section {
     transform-origin: left;
     box-shadow: 0 0 15px rgba(14, 239, 255, 0.5);
 }
-
-.progress-line.html span { width: 90%; }
-.progress-line.css span { width: 70%; }
-.progress-line.js span { width: 85%; }
-.progress-line.sql span { width: 80%; }
-.progress-line.nextjs span { width: 80%; }
-.progress-line.react span { width: 80%; }
-.progress-line.python span { width: 80%; }
-.progress-line.prompt span { width: 70%; }
 
 /* Professional Skills */
 .professional-skills {
@@ -1307,6 +1420,11 @@ section {
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
         gap: 1.5rem;
     }
+
+    .technical-skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1471,6 +1589,24 @@ section {
     .tool-card h4 {
         font-size: 16px;
     }
+
+    .technical-skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .skill-card-tech {
+        padding: 1.5rem;
+    }
+
+    .skill-name span {
+        font-size: 18px;
+    }
+
+    .percentage-badge {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1578,6 +1714,28 @@ section {
 
     .tool-card h4 {
         font-size: 14px;
+    }
+
+    .technical-skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .skill-card-tech {
+        padding: 1.5rem 1rem;
+    }
+
+    .skill-name span {
+        font-size: 16px;
+    }
+
+    .skill-name i {
+        font-size: 24px;
+    }
+
+    .percentage-badge {
+        font-size: 14px;
+        padding: 4px 8px;
     }
 }
 
