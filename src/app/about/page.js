@@ -1,6 +1,51 @@
 import Link from 'next/link';
 
 export default function About() {
+  const journeySteps = [
+    {
+      date: "Oct 2019 - Jan 2020",
+      title: "TiE TYE Entrepreneurship Program",
+      description: "Won prototype competition",
+      // certificateLink: "" // Add certificate link here later
+    },
+    {
+      date: "August 2020",
+      title: "IIIT Hyderabad Online Pedagogy Program",
+      description: "Youngest IIIT Certified Teacher",
+      // certificateLink: "" // Add certificate link here later
+    },
+    {
+      date: "August 2020",
+      title: "Metamorphosis IIT Bhubaneshwar Entrepreneurship Program",
+      description: "",
+      // certificateLink: "" // Add certificate link here later
+    },
+    {
+      date: "March 2021",
+      title: "Wadhwani Foundation Entrepreneurship Program",
+      description: "",
+      // certificateLink: "" // Add certificate link here later
+    },
+    {
+      date: "July 2022",
+      title: "EduxLabs IIT Madras DL & Computer Vision using Python",
+      description: "",
+      // certificateLink: "" // Add certificate link here later
+    },
+    {
+      date: "July 2022 - August 2022",
+      title: "Introduction to Artificial Intelligence – Nanyang Technological University",
+      description: "",
+      // certificateLink: "" // Add certificate link here later
+    },
+    {
+      date: "August 2022 - October 2022",
+      title: "Applied AI – Hewlett Packard Enterprise Education",
+      description: "Got LoR for winning best AI prototype",
+      // certificateLink: "" // Add certificate link here later
+    }
+  ];
+
   return (
     <>
       <header className="header">
@@ -36,6 +81,40 @@ export default function About() {
           <p>
             I enjoy participating in business and innovation competitions, including one by Tiger Global. Beyond tech, I love modelling and creative exploration! I have technical skills in Python, HTML, CSS, JavaScript, React, and DSA.
           </p>
+        </div>
+      </section>
+
+      {/* Journey Timeline Section */}
+      <section className="journey-section">
+        <div className="journey-header">
+          <h2>My <span>Journey</span></h2>
+          <p>A timeline of my educational achievements and professional milestones</p>
+        </div>
+        
+        <div className="timeline-container">
+          <div className="timeline-line"></div>
+          {journeySteps.map((step, index) => (
+            <div className="timeline-item" key={index} style={{ '--i': index + 1 }}>
+              <div className="timeline-dot">
+                <div className="timeline-dot-inner"></div>
+              </div>
+              <div className="timeline-content">
+                <div className="timeline-date">{step.date}</div>
+                <h3 className="timeline-title">{step.title}</h3>
+                {step.description && (
+                  <p className="timeline-description">{step.description}</p>
+                )}
+                {/* Uncomment and add href when certificate links are available
+                {step.certificateLink && (
+                  <a href={step.certificateLink} className="timeline-certificate" target="_blank" rel="noopener noreferrer">
+                    <i className='bx bx-certificate'></i>
+                    View Certificate
+                  </a>
+                )}
+                */}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
